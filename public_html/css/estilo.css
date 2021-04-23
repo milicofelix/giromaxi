@@ -1,0 +1,241 @@
+html{
+    scroll-behavior: smooth;
+}
+body p, h1, h2, h3, h4, h5, h6, label, input {
+    font-family: "Montserrat",sans-serif;
+}
+a[href="#top"]{
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+}
+a[href="#top"]:hover{
+    text-decoration:none;
+}
+.bg-topo{
+    background-color: #FFF;
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 1024px) {
+    .bg-topo{
+        background: linear-gradient(to right, #FFF, #FFF, #CCC, #000, #E46339);
+    }
+}
+#topo ul li a {
+    color: #411c0e;
+}
+.btn-orcamento{
+    border: solid 2px #fff;
+    background: none;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    border-radius: 30px;
+    height: 100%;
+}
+.btn-orcamento:hover{
+    color: #68627a;
+    background: #fff;
+    border-color: #fff;
+    transition: all .50s ease-in-out;
+    -moz-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+}
+.bg-servicos{
+    background: linear-gradient(to right, #0F3961, #0F3961, #0F3961,#0F3961, #E46339, #E46339, #E46339);
+}
+.bg-parceiros{
+    background-color: #f2f0f7
+}
+.padding-parceiros{
+    padding: 2px !important;
+}
+
+/* Efeito Parallax*/
+.bg-parallax{
+    background: url("../images/bg.jpg") fixed;
+    /*position: relative;*/
+}
+.fatos{
+    text-align: center;
+    color: #fff;
+}
+
+.fatos .icon i{
+    font-size: 50px;
+    color: #fff;
+}
+
+.fatos h3{
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.fatos h4{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.tabela-preco{
+    padding: 0 0 40px 0;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+}
+.tabela-preco .preco-detalhe h5{
+
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    padding: 30px 0;
+}
+.tabela-preco .preco-detalhe span{
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    color: #4c465f;
+    margin-bottom: 20px;
+}
+.tabela-preco .preco-detalhe ul{
+    margin-bottom: 35px;
+    padding: 0 !important;
+}
+.tabela-preco .preco-detalhe ul li{
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px dotted #f1f1f1;
+    list-style: none;
+}
+.btn-preco{
+    border: 10px solid #E46339;
+    background-color: #E46339;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    border-radius: 30px;
+}
+.btn-preco:hover{
+    color: #fff;
+    background-color: #2E2B2A;
+    transition: all .50s ease-in-out;
+    -moz-transition: all .50s ease-in-out;
+    -webkit-transition: all .50s ease-in-out;
+}
+
+.bg-rodape{
+    background-color: #0F3961;
+    color: #E46339;
+    border-top: 1px solid #2E2B2A;
+}
+.bg-rodape ul{
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
+}
+.bg-servicos ul li{
+    font-family: "Montserrat",sans-serif;
+    list-style: none;
+    font-size: 12pt;
+}
+.bg-servicos h5 {
+    color: #E46339!important;
+    text-align: left;
+}
+.bg-servicos ul li a{
+    color: #fff;
+}
+.bg-servicos ul li a:hover{
+    color: #E46339;
+}
+.bg-rodape small{
+    color: #FFF;
+}
+p.direitos{
+    font-size: small;
+}
+
+.bg-card-rodape{
+   /* background-color: #E46339;*/
+    background: linear-gradient(to left, #0F3961, #0F3961, #0F3961,#0F3961, #E46339, #E46339, #E46339);
+}
+.icon-banner-rodape{
+    color: #E46339;
+}
+.bg-rodape2{
+    background-color: #0F3961;
+}
+.bg-empresa{
+    background-color: #000;
+}
+a.icone-social{
+    color: #b3aec2;
+}
+
+/* Config gerais*/
+.underline {
+    content: '';
+    border-top: 2px solid #ff3859;
+    width: min-content;
+    display: block;
+    margin-bottom: 8px;
+    margin: 0 auto;
+}
+.underline-footer {
+    content: '';
+    border-top: 2px solid #ff3859;
+    width: fit-content;
+    display: block;
+    margin-top: 5px;
+}
+.sombra:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+
+.mapouter {
+    position:center;
+    text-align:center;
+
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+}
+.lightbox {
+    /** Default lightbox to hidden */
+    display: none;
+
+    /** Position and style */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+    /** Pad the lightbox image */
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%;
+}
+
+.lightbox:target {
+    /** Remove default browser outline */
+    outline: none;
+
+    /** Unhide lightbox **/
+    display: block;
+}
